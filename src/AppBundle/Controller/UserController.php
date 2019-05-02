@@ -25,4 +25,8 @@ class UserController extends FrontendController
         $userList->setLimit(5);
         $this->view->users= $userList;
     }
+	
+	public function newFunction($name){
+		echo "Hello $name, This is a test function";
+	}
 }
